@@ -41,7 +41,7 @@ ADMIN_IDS = {
     if x.strip().isdigit()
 }
 
-DATABASE = os.getenv("DATABASE_PATH", "/var/data/vyn.db")
+DATABASE = os.getenv("DATABASE_PATH", "vyn.db")
 WEBAPP_URL = os.getenv("WEBAPP_URL", "")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
 REPLICATE_API_TOKEN = os.getenv("REPLICATE_API_TOKEN", "")
