@@ -1179,7 +1179,6 @@ def main():
         MessageHandler(
             filters.TEXT & ~filters.COMMAND,
             moderation_handler,
-            group=0
         )
     )
 
@@ -1187,8 +1186,8 @@ def main():
         MessageHandler(
             filters.TEXT & ~filters.COMMAND,
             text_handler,
-            group=1
-        )
+        ),
+        group=1
     )
 
     app.add_handler(CallbackQueryHandler(button_handler))
